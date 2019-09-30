@@ -5,7 +5,7 @@ int main() {
 	printf("Hello, World!\n");
 	printf("%d\n", sum(3, 4));
 	int a;
-	scanf(&a);
+	scanf("%d",&a);
 	return 0;
 }
  
