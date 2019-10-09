@@ -1,0 +1,3 @@
+/home/claudio/SO/ThreadFWK/CMakeFiles/rebuild_cache.dir
+/home/claudio/SO/ThreadFWK/CMakeFiles/ThreadFMW.dir
+/home/claudio/SO/ThreadFWK/CMakeFiles/edit_cache.dir
