@@ -12,11 +12,16 @@ void testEnqueue() {
     tqueue_enqueue(&q, (void *) &b);
 
     TQueue q2 = tqueue_at_offset(q, 0);
-    void *d = q2->data;
-    int *d2 = (int *) d;
-    int v = *d2;
-    //int v = (int) (*(a->data));
+    int *v = (int *) (q2->data);
 
-    printf("%d", v);
+    printf("%d\n", *v);
+    printf("%ld\n", tqueue_size(q));
 
+    void *data = tqueue_pop(&q);
+    int *dataD = (int *) data;
+    printf("%d\n", *dataD);
+
+    data = tqueue_pop(&q);
+    dataD = (int *) data;
+    printf("%d\n", *dataD);
 }

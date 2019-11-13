@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include "tqueue.h"
 
+unsigned long int size = 0;
+
 /* Adds a new element at the end of the list, returns its position */
 unsigned long int tqueue_enqueue(TQueue *q, void *data) {
     //TQueueNode* node = (TQueueNode*)(*q);
@@ -9,6 +11,7 @@ unsigned long int tqueue_enqueue(TQueue *q, void *data) {
         (*q) = (TQueueNode *) malloc(sizeof(TQueueNode));
         (*q)->data = data;
         (*q)->next = NULL;
+        size++;
         return 0;
     }
 
@@ -24,18 +27,26 @@ unsigned long int tqueue_enqueue(TQueue *q, void *data) {
     ptr = (TQueueNode *) malloc(sizeof(TQueueNode));
     ptr->data = data;
     ptrPrev->next = ptr;
+    size++;
     return i;
 }
 
 /* Removes and returns the element at the beginning of the list, NULL if the
 queue is empty */
 void *tqueue_pop(TQueue *q) {
+    if ((*q) == NULL) {
+        return NULL;
+    }
 
+    void *data = (*q)->data;
+    *q = (*q)->next;
+    size--;
+    return data;
 }
 
 /* Returns the number of elements in the list */
 unsigned long int tqueue_size(TQueue q) {
-
+    return size;
 }
 
 /* Returns a 'view' on the list starting at (a positive) offset distance,
