@@ -1,11 +1,8 @@
 #include <stdio.h>
-#include "test.cpp"
+#include "tqueue_test.c"
 
 int main() {
-	printf("Hello, World!\n");
-	printf("%d\n", sum(3, 4));
-	int a;
-	scanf("%d",&a);
-	return 0;
+    testEnqueue();
+    return 0;
 }
  
