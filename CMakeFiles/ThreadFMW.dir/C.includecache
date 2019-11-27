@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/main.c
+stdio.h
+-
+tqueue_test.c
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/tqueue_test.c
+
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/tqueue.c
+stdlib.h
+-
+tqueue.h
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/tqueue.h
+
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/tqueue.h
+string.h
+-
+
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/tqueue_test.c
+stdio.h
+-
+string.h
+-
+tqueue.c
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/tqueue.c
+

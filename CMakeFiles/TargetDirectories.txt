@@ -1,0 +1,3 @@
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/CMakeFiles/ThreadFMW.dir
+/mnt/c/Users/Ardjan/source/repos/ThreadFWK/CMakeFiles/edit_cache.dir

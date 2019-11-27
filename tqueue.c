@@ -71,5 +71,9 @@ TQueue tqueue_at_offset(TQueue q, unsigned long int offset) {
 
 /* Returns the data on the first node of the given list */
 void *tqueue_get_data(TQueue q) {
+	if (q == NULL) {
+		return NULL;
+	}
 
+	return q->data;
 }

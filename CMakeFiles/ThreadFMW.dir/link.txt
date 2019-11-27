@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/ThreadFMW.dir/main.c.o CMakeFiles/ThreadFMW.dir/tqueue.c.o CMakeFiles/ThreadFMW.dir/tqueue_test.c.o  -o ThreadFMW 
