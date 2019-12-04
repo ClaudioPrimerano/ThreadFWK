@@ -70,7 +70,7 @@ void assertInt(int exp, int got)
 		printf("%sFAILED %d \t %s", RED, nTest, str);
 	}
 	else {
-		printf("%sSUCCESS %d", GREEN, nTest);
+		printf("%sSUCCESS %d %s", GREEN, nTest, __func__);
 	}
 
 	nTest++;
@@ -96,7 +96,7 @@ void assertNullPtr(void* ptr)
 {
 	if (ptr == NULL)
 	{
-		printf("%sSUCCESS %d", GREEN, nTest);
+		printf("%sSUCCESS %d %s", GREEN, nTest, __func__);
 	}
 	else
 	{
